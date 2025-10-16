@@ -20,7 +20,7 @@ int main()
 			unsigned side, height;
 			std::cin >> side >> height;
 
-			area = (side * height) / 2.0; // 2.0!!!!!
+			area = (side * height) / 2.0; // 2.0, so that floating-point division would be made, instead of integer division!!!
 		}
 		break;
 		case 'c': {
@@ -46,3 +46,4 @@ int main()
 	}
 
 }
+
