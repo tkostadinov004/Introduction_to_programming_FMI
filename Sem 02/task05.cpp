@@ -3,8 +3,8 @@
 const double PI = 3.14;
 int main()
 {
-    char figure;
-    std::cin >> figure;
+	char figure;
+	std::cin >> figure;
 
 	double area = -1;
 	switch (figure)
@@ -44,6 +44,4 @@ int main()
 	if (area > -1) {
 		std::cout << area;
 	}
-
 }
-
