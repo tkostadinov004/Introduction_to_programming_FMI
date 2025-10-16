@@ -17,10 +17,10 @@ int main()
 		}
 		break;
 		case 't': {
-			unsigned side, altitude;
-			std::cin >> side >> altitude;
+			unsigned side, height;
+			std::cin >> side >> height;
 
-			area = (side * altitude) / 2.0; // 2.0!!!!!
+			area = (side * height) / 2.0; // 2.0!!!!!
 		}
 		break;
 		case 'c': {
@@ -44,4 +44,5 @@ int main()
 	if (area > -1) {
 		std::cout << area;
 	}
+
 }
