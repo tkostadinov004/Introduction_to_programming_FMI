@@ -24,3 +24,61 @@ arr[1]; //едномерен масив
 arr[1][3]; // двумерен масив
 arr[1][3][4]; // тримерен масив
 ```
+
+### Подаване на многомерни масиви във функции
+```c++
+void print(const int arr[][5], unsigned rows, unsigned cols) 
+{
+    for (unsigned i = 0; i < rows; i++)
+    {
+        for (unsigned j = 0; j < cols; j++)
+        {
+            cout << arr[i][j] << " ";
+        }
+    }
+}
+
+void multiply(int arr[][5], unsigned rows, unsigned cols)
+{
+    for (unsigned i = 0; i < rows; i++)
+    {
+        for (unsigned j = 0; j < cols; j++)
+        {
+            arr[i][j] *= 2;
+        }
+    }
+}
+
+int main()
+{
+    constexpr unsigned ROWS = 2;
+    constexpr unsigned COLS = 3;
+    int arr[ROWS][COLS] = {{1, 2, 3}, {4, 5, 6}};
+
+    print(arr, ROWS, COLS); // 1 2 3 4 5 6
+    multiply(arr, ROWS, COLS);
+    print(arr, ROWS, COLS); // 2 4 6 8 10 12
+}
+```
+
+## Задачи
+### Примери от семинар
+**1.** Напишете функция, която приема матрица с N реда и N+1 колони, представляваща коефициенти пред система от линейни уравнения, и решава системата</br>
+<table>
+   <tr><th><strong>Вход</strong></th><th><strong>Изход</strong></th><th><strong>Обяснение</strong></th></tr>
+   <tr><td>1 1 1 6</br> 2 3 1 11 </br> 3 -1 2 7</td><td><i>x=1, y=2, z=3</i></td><td>Системата е: </br> x + y + z = 6 </br> 2x + 3y + z = 11 </br> 3x - y + 2z = 7</td></tr>
+</table>
+
+### Още задачи
+**1.** Напишете функция, която приема двумерен масив и го транспонира.</br>
+<table>
+   <tr><th><strong>Вход</strong></th><th><strong>Изход</strong></th></tr>
+   <tr><td>3 7 8</br> 9 11 13 </br> 15 16 17</td><i><td>3 9 15</br>7 11 16 </br> 8 13 17</td></i></tr>
+</table>
+
+**2.** Дефинираме *късметлийско число* като число в матрица, което е едновременно най-малкото в своя ред и най-голямото в своята колона. 
+Напишете функция, която приема двумерен масив, съставен от уникални естествени числа и връща късметлийското число или -1, ако такова няма.</br>
+<table>
+   <tr><th><strong>Вход</strong></th><th><strong>Изход</strong></th></tr>
+   <tr><td>3 7 8</br> 9 11 13 </br> 15 16 17</td><td><i>15</i></td></tr>
+</table>
