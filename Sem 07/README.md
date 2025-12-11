@@ -290,7 +290,7 @@ cout << str; // fmi
 <table>
    <tr><th><strong>Вход</strong></th><th><strong>Изход</strong></th></tr>
    <tr><td>This is an example!</td><i><td>4</td></i></tr>
-   <tr><td>This is an example with a &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;long break!</td><i><td>8</td></i></tr>
+   <tr><td>This is an example with a &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;long break! ?!?!</td><i><td>8</td></i></tr>
 </table>
 
 **4.** Напишете функция, която приема символен низ и връща дали той представлява валиден IPv4 адрес. 
