@@ -13,8 +13,7 @@ unsigned myStrlen(const char* str) {
 	return length;
 }
 
-unsigned countOccurrences(const char* str,
-	char ch) {
+unsigned countOccurrences(const char* str, char ch) {
 	if (!str) {
 		return 0;
 	}
