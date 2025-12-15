@@ -15,21 +15,19 @@ bool isAnagram(const char* first, const char* second) {
         return false;
     }
 
-    unsigned occsInFirst[LETTERS_COUNT]{ 0 }, occsInSecond[LETTERS_COUNT]{ 0 };
+    unsigned occurrencesInFirst[LETTERS_COUNT]{ 0 }, occurrencesInSecond[LETTERS_COUNT]{ 0 };
 
     while (*first) {
-        occsInFirst[*first - 'a']++;
+        occurrencesInFirst[*first - 'a']++;
         first++;
     }
     while (*second) {
-        occsInSecond[*second - 'a']++;
+        occurrencesInSecond[*second - 'a']++;
         second++;
     }
 
-    for (int i = 0; i < LETTERS_COUNT; i++)
-    {
-        if (occsInFirst[i] != occsInSecond[i])
-        {
+    for (int i = 0; i < LETTERS_COUNT; i++) {
+        if (occurrencesInFirst[i] != occurrencesInSecond[i]) {
             return false;
         }
     }
@@ -38,5 +36,5 @@ bool isAnagram(const char* first, const char* second) {
 
 int main()
 {
-    isAnagram("a", "b");
+    std::cout << isAnagram("a", "b");
 }
