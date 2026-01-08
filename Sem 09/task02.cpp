@@ -64,6 +64,13 @@ char** tokenize(const char* str) {
 	return result;
 }
 
+void print(char** tokens) {
+	while (*tokens) {
+		std::cout << *tokens << std::endl;
+		tokens++;
+	}
+}
+
 void freeMemory(char** matrix) {
 	unsigned index = 0;
 	while (matrix[index]) {
@@ -73,16 +80,9 @@ void freeMemory(char** matrix) {
 	delete[] matrix;
 }
 
-void print(char** tokens) {
-	while (*tokens) {
-		std::cout << *tokens << std::endl;
-		tokens++;
-	}
-}
-
 int main()
 {
 	char** tokens = tokenize("Im! in FMI?");
 	print(tokens);
-	freeMemory(tokens);
+	freeMemory(tokens); //!!!
 }
