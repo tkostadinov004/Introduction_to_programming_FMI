@@ -55,7 +55,6 @@ freeMemory(matrix, rows);
 <table>
    <tr><th><strong>Вход</strong></th><th><strong>Изход</strong></th></tr>
    <tr><td>Hi! My name is&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;what?</td><i><td>["Hi", "My", "name", "is", "what"]</td></i></tr>
-   <tr><td>1 2 3 </br> 4 5</td><i><td>1 2 3 4 5</td></i></tr>
 </table>
 
 ### Още задачи
