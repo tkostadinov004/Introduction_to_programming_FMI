@@ -1,3 +1,5 @@
+#include <iostream>
+
 bool isLower(char c) {
 	return c >= 'a' && c <= 'z';
 }
