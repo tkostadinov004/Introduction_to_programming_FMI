@@ -1,3 +1,5 @@
+#include <iostream>
+
 bool isUpper(char c) {
 	return c >= 'A' && c <= 'Z';
 }
