@@ -64,7 +64,7 @@ char** tokenize(const char* str) {
 	return result;
 }
 
-void print(char** tokens) {
+void print(const char* const* tokens) {
 	while (*tokens) {
 		std::cout << *tokens << std::endl;
 		tokens++;
