@@ -26,7 +26,7 @@ bool isPalindrome(const char* str) {
 }
 
 bool isPalindrome_rec(const char* str, unsigned start, unsigned end) {
-	if (end < start) {
+	if (end <= start) {
 		return true;
 	}
 
