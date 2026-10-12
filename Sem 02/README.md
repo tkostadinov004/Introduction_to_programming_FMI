@@ -117,7 +117,7 @@ int main() {
 }
 ```
 
-Генерираният код на assembly за [RISC-V](https://riscv.org/) архитектурата изглежда така:
+Генерираният код на assembly от компилаторът [GCC](https://gcc.gnu.org/) за [RISC-V](https://riscv.org/) архитектурата изглежда така:
 ```asm
 main:
     addi    sp,sp,-32
