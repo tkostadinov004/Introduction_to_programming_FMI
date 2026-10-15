@@ -2,15 +2,15 @@
 
 int main()
 {
-    double r, x, y, hypotenuse_Point, hypotenuse_Circle;
+    double r, x, y;
     std::cout<<"r: ";
     std::cin>>r;
     std::cout<<"x: ";
     std::cin>>x;
     std::cout<<"y: ";
     std::cin>>y;
-    hypotenuse_Circle = r*r;
-    hypotenuse_Point = y*y + x*x;
+    double hypotenuse_Circle = r*r;
+    double hypotenuse_Point = y*y + x*x;
     std::cout<<"The point is ";
     if (hypotenuse_Circle==hypotenuse_Point)
     {
