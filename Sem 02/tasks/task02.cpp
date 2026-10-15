@@ -19,14 +19,5 @@ int main()
         input_Hour= input_Hour-HOURS_IN_A_DAY;   
     }
     std::cout<<"After 15 minutes the clock will be at: ";
-    if(input_Hour < 10)
-    {
-        std::cout<<"0"<<input_Hour<<":"<<input_Minutes;
-    }
-    else
-    {
-         std::cout<<input_Hour<<":"<<input_Minutes;
-
-    }
-
+    std::cout << (input_Hour < 10 ? "0" : "") << input_Hour << ":" << (input_Minutes < 10 ? "0" : "") << input_Minutes;
 }
