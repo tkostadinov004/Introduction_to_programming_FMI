@@ -5,31 +5,26 @@ int main()
 	unsigned n;
 	std::cin >> n;
 
-	unsigned div = n / 2;
-	while (n > 1) {
+	for (unsigned i = n; i > 1 && n > 1; i--) {
 		bool isPrime = true;
-		double root = sqrt(div);
-		for (int i = 2; i <= root; i++) {
-			if (div % i == 0) {
+		for (unsigned j = 2; j <= i / j; j++) {
+			if (i % j == 0) {
 				isPrime = false;
 				break;
 			}
 		}
-
 		if (!isPrime) {
-			div--;
 			continue;
 		}
 
 		unsigned times = 0;
-		while (n % div == 0) {
+		while (n % i == 0) {
 			times++;
-			n /= div;
+			n /= i;
 		}
 
 		if (times > 0) {
-			std::cout << div << "^" << times << " * ";
+			std::cout << i << "^" << times << " ";
 		}
-		div--;
 	}
 }
