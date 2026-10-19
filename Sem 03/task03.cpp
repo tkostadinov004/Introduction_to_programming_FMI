@@ -6,8 +6,7 @@ int main()
 	std::cin >> num;
 	
 	bool isPrime = true;
-	double root = sqrt(num);
-	for (int i = 2; i <= root; i++) {
+	for (int i = 2; i <= num / i; i++) {
 		if (num % i == 0) {
 			isPrime = false;
 			break;
