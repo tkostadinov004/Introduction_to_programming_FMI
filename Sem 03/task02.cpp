@@ -5,7 +5,7 @@ int main()
     unsigned a, b;
     std::cin >> a >> b;
 
-    if (a > b) {
+    if (a < b) {
         unsigned temp = a;
         a = b;
         b = temp;
