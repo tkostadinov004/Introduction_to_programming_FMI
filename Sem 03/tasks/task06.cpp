@@ -20,6 +20,7 @@ int main()
             {
                 if (current > max)
                 {
+                    max2 = max;
                     max = current;
                 }
                 else
