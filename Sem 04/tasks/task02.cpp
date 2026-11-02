@@ -2,24 +2,22 @@
 
 long long fastPower(long long a, int n)
 {
-    if (n == 0)
+    long long result = 1;
+    while (n > 0)
     {
-        return 1;
+        if (n % 2 != 0)
+        {
+            result = result * a;
+        }
+        a = a * a;
+        n = n / 2;
     }
-    if (n % 2 == 0)
-    {
-        return fastPower(a * a, n / 2);
-    }
-    else
-    {
-        return a * fastPower(a, n - 1);
-    }
+    return result;
 }
 
-int main()
-{
+int main() {
     long long a;
-    int n;    
+    int n;
     std::cin >> a >> n;
     std::cout << fastPower(a, n);
 }
