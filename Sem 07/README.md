@@ -117,16 +117,13 @@ cout << diff; // 5 = (220 - 200) / sizeof(int)
 ### Подаване на масиви във функции
 Както разбрахме от предишни семинари, масивът представлява указател към първия елемент в него. Това означава, че можем да подаваме във функции масиви там, където се изисква указател:
 ```c++
-void print(const int* arr, unsigned size)
-{
-    for (unsigned i = 0; i < size; i++)
-    {
+void print(const int* arr, unsigned size) {
+    for (unsigned i = 0; i < size; i++) {
         cout << arr[i] << " ";
     }
 }
 
-int main()
-{
+int main() {
     constexpr unsigned SIZE = 5;
     int arr[SIZE] = {1, 2, 3, 4, 5};
 
@@ -154,13 +151,11 @@ char str[6] = "fmi";
 ### Подаване във функции
 Символният низ е най-обикновен масив, тоест представлява указател към първия символ в него, и можем да го подаваме на функции, както бихме подали други масиви.
 ```c++
-void f(const char* str)
-{
+void f(const char* str) {
     // something
 }
 
-int main()
-{
+int main() {
   char str[] = "fmi";
   f(str);
 }
